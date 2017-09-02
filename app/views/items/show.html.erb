@@ -4,3 +4,7 @@
 <%= link_to "Zurück", root_path %>
 <%= link_to "Editieren", edit_item_path %>
 <%= link_to "Löschen", item_path(@item), method: :delete, data: {confirm: "Sicher?"} %>
+
+<%= link_to root_path do%>
+    <i class="fa fa-bathtub" aria-hidden="true"></i>
+<% end %>
