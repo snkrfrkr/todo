@@ -1,0 +1,8 @@
+<h1>Meine Aufgaben</h1>
+<p>hier neue Aufgaben eintragen</p>
+<button type="button" class="btn btn-default"><%= link_to "Neue Aufgabe", new_item_path %></button>
+<hr></hr>
+<% @items.each do |item| %>
+    <h2><%= item.title %></h2>
+    <p><%= item.description %></p>
+<% end %>
